@@ -1345,9 +1345,9 @@ API Key 权限：交易
 
 API Key 权限：提币
 
-<aside class="notice">如果用户在 <a href='https://www.hbg.com/zh-cn/user_center/uc_setting/'>个人设置 </a> 里设置了优先使用快速提币，通过API发起的提币也会优先选择快速提币通道。快速提币是指当提币目标地址是火币用户地址时，提币将通过火币平台内部快速通道，不通过区块链。</aside>
+<aside class="notice">如果用户在 <a href='https://www.hbg.com/zh-cn/user_center/uc_setting/'>个人设置 </a> 里设置了优先使用快速提币，通过API发起的提币也会优先选择快速提币通道。快速提币是指当提币目标地址是平台用户地址时，提币将通过平台内部快速通道，不通过区块链。</aside>
 
-<aside class="notice">API提币仅支持用户的相应币种 <a href='https://www.hbg.com/zh-cn/withdraw_address/'>常用地址列表 </a> 中的地址。</aside>
+<aside class="notice">API提币仅支持用户的相应币种常用地址列表 </a> 中的地址。</aside>
 
 ### HTTP 请求
 
@@ -1366,9 +1366,9 @@ API Key 权限：提币
 
 | 参数名称       | 是否必须 | 类型     | 描述     |取值范围 |
 | ---------- | ---- | ------ | ------ | ---- |
-| address | true | string   | 提现地址 |仅支持在官网上相应币种[地址列表](https://www.hbg.com/zh-cn/withdraw_address/) 中的地址  |
+| address | true | string   | 提现地址 |仅支持在官网上相应币种地址列表中的地址  |
 | amount     | true | string | 提币数量   |      |
-| currency | true | string | 资产类型   |  btc, ltc, bch, eth, etc ...(火币全球站支持的币种) |
+| currency | true | string | 资产类型   |  btc, ltc, bch, eth, etc ... |
 | fee     | false | string | 转账手续费  |     |
 | chain   | false | string | 提 USDT-ERC20 时需要设置此参数为 "usdterc20"，其他币种提现不需要设置此参数  |     |
 | addr-tag|false | string | 虚拟币共享地址tag，适用于xrp，xem，bts，steem，eos，xmr | 格式, "123"类的整数字符串|
